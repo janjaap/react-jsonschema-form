@@ -60,10 +60,6 @@ function extractFileInfo(dataURLs) {
 }
 
 class FileWidget extends Component {
-  defaultProps = {
-    multiple: false,
-  };
-
   constructor(props) {
     super(props);
     const { value } = props;
@@ -117,6 +113,7 @@ class FileWidget extends Component {
 
 FileWidget.defaultProps = {
   autofocus: false,
+  multiple: false,
 };
 
 if (process.env.NODE_ENV !== "production") {
